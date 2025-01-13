@@ -27,8 +27,6 @@ def initialize():
         print("\n")
         current_state = iteration(current_state)
 
-    for i in range(2000): #this is added code to test issues, it is useless
-        print("this is added code to test issues, it is useless")
 
 def iteration(current_state):
     rows = len(current_state)
