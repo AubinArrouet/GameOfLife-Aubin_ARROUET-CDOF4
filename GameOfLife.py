@@ -27,6 +27,9 @@ def initialize():
         print("\n")
         current_state = iteration(current_state)
 
+    for i in range(2000): #this is added code to test issues, it is useless
+        print("this is added code to test issues, it is useless")
+
 def iteration(current_state):
     rows = len(current_state)
     cols = len(current_state[0])
@@ -44,10 +47,11 @@ def iteration(current_state):
                 new_row += ' '
         new_state.append(new_row)
 
-    return new_state
+    return new_state,14 #the return 14 is just supplementary code so that I can test issues
 
 def count_alive_neighbors(current_state, x, y,rows,cols):
     alive_neighbors = 0
+    uselesss_variable=None #this is a useless variable to remove, it is put so that I can test issues
 
     for dx in [-1, 0, 1]:
         for dy in [-1, 0, 1]:
