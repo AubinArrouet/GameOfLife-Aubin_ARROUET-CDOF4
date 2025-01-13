@@ -1,6 +1,6 @@
-Conway's Game of Life - Python Implementation
+# Conway's Game of Life - Python Implementation
 
-Description
+# Description
 
 This project is a simple Python implementation of Conway's Game of Life, a cellular automaton devised by mathematician John Conway. The game is played on a grid of cells, where each cell can be either alive (#) or dead ( ). The state of the grid evolves in discrete time steps according to a set of rules based on the number of alive neighbors of each cell.
 
@@ -8,7 +8,7 @@ The purpose of this project is to provide an educational demonstration of the Ga
 
 How to Run the Project
 
-Prerequisites:
+# Prerequisites:
 
 Ensure you have Python 3.x installed on your system.
 
