@@ -45,7 +45,7 @@ def iteration(current_state):
                 new_row += ' '
         new_state.append(new_row)
 
-    return new_state,14 #the return 14 is just supplementary code so that I can test issues
+    return new_state 
 
 def count_alive_neighbors(current_state, x, y,rows,cols):
     alive_neighbors = 0
