@@ -1,4 +1,12 @@
 def initialize():
+    """
+    Initializes the Game of Life simulation with a predefined starting state.
+    Prints each generation's grid to the console for 1,000 generations.
+
+    The grid is a list of strings where:
+    - '#' represents a live cell
+    - ' ' represents a dead cell
+    """
     current_state = [
         '                                              ',
         '                                              ',
@@ -29,6 +37,15 @@ def initialize():
 
 
 def iteration(current_state):
+    """
+    Computes the next generation of the grid based on the current state.
+
+    Args:
+        current_state (list of str): The current state of the grid.
+
+    Returns:
+        list of str: The next state of the grid after applying the Game of Life rules.
+    """
     rows = len(current_state)
     cols = len(current_state[0])
     new_state = []
@@ -48,6 +65,19 @@ def iteration(current_state):
     return new_state 
 
 def count_alive_neighbors(current_state, x, y,rows,cols):
+    """
+    Counts the number of live ('#') neighbors around a given cell.
+
+    Args:
+        current_state (list of str): The current state of the grid.
+        x (int): The row index of the cell.
+        y (int): The column index of the cell.
+        rows (int): Total number of rows in the grid.
+        cols (int): Total number of columns in the grid.
+
+    Returns:
+        int: The number of live neighbors around the cell.
+    """
     alive_neighbors = 0
     uselesss_variable=None #this is a useless variable to remove, it is put so that I can test issues
 
